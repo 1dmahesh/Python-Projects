@@ -1,0 +1,9 @@
+termcolor
+PyDictionary
+random
+PIL
+schedule
+time
+tkinter
+random
+qrcode
