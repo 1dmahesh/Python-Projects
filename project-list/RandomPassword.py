@@ -1,9 +1,12 @@
+# This is a GUI Programm it will generate a random password for you.
+
 from tkinter import *
 import tkinter as tk
 import string
 import random
 text = list(string.ascii_letters + string.digits + "!@#$%^&*()\/")
 
+# From this we will create a Display Window.
 root=tk.Tk()
 root.geometry('800x500')
 root.resizable(0,0)
@@ -15,6 +18,7 @@ password_store=tk.IntVar()
 tk.Label(root, text = 'Paste The Number of characters', font = 'Consolas 18 bold',).place(x= 200 , y = 80)
 pass_enter=tk.Entry(root, width = 15,textvariable = password_store).place(x = 310, y = 140)
 
+# This function below will generate and show that password to use in the display.
 def pass_genetaor():
     namevar=password_store.get()
     password_length = namevar

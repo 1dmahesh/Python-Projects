@@ -1,7 +1,8 @@
+# A simple program to Create QR code of any websites links.
+
 import qrcode
 img_save = input("Enter The Name of File: ")
 def generator_qrcode(text):
-
     qr = qrcode.QRCode(
          version = 1,
          error_correction = qrcode.constants.ERROR_CORRECT_L,

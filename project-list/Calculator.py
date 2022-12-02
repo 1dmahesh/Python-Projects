@@ -1,7 +1,11 @@
+# This will give you a calculator program , with choice to choose what you want to do.
+# we will import sys and termcolor lib for this.
+
 import sys
 from termcolor import colored, cprint
-
 color = colored("See You Soon", "blue", attrs=['reverse', 'blink'] )
+
+# Here we will create functions for add,sub, multiplication and divide methods.
 
 def add(a, b):
     answer = colored( a + b, "red", attrs=['reverse', 'blink'] )
@@ -18,6 +22,8 @@ def mult(a, b):
 def div(a , b):
     answer = colored( a / b, "green", attrs=['reverse', 'blink'] )
     print("Your Answer is ", "=", '\033[1m' + str(answer) + '\033[0m' + "\n")
+
+# Now we will use While to loop the above outputs. for every method
 
 while True:
     print("A.", '\033[1m' + 'Addition' + '\033[0m')

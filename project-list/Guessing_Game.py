@@ -1,3 +1,5 @@
+# This is a passtime programm, that you can play with your own.
+
 import random
 from termcolor import colored, cprint
 
@@ -5,7 +7,7 @@ color = colored("Yehh!! , It's Game time ", "red", attrs=['reverse', 'bold'] )
 print(color)
 print()
 
-
+# This function will be used for selecting the choice of game.
 def select_game():
     print("A.", '\033[1m' + 'User_Guess' + '\033[0m')
     print("B.", '\033[1m' + 'Computer_guess' + '\033[0m')
@@ -20,8 +22,8 @@ def select_game():
         print()
         computer_guess(50)
 
-
-
+# This function will be used for user base game. Here user will give a number and
+# computer will randomly generate a number beetween 1 to {number given by user}.
 def guess(x):
     random_number = random.randint(1, x)
     guess = 0
@@ -35,7 +37,7 @@ def guess(x):
     color_computer = colored("Yeah, You have guessed it Right, The number is " + str(int(guess)), "green", attrs=['reverse', 'bold', 'blink'])
     print(color_computer)
 
-
+# This function will be used for computer base game. Here computer will guess the number from 1 to {number given by user}.
 def computer_guess(x):
     low = 1
     high = x

@@ -1,3 +1,5 @@
+# This programm will check if the URL is running or not.
+
 import urllib.request as urllib 
 from termcolor import colored, cprint
 

@@ -1,3 +1,4 @@
+# This will give you a programm with diffrent dictionary methods.
 from PyDictionary import PyDictionary
 dictionary = PyDictionary()
 

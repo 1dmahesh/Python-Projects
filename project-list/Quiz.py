@@ -1,3 +1,4 @@
+# This Program will check your General Knowledge, on based of 8 questions and print out result in percentage.
 import sys
 from termcolor import colored, cprint
 
@@ -39,6 +40,7 @@ quiz ={
 
 score = 0
 
+# Here we will use above dictionary values as key and value.
 for key, value in quiz.items():
     print(value["question"])
     answer = input('answer:')
