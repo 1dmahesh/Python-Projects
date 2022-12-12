@@ -25,7 +25,7 @@ So let's started with a Brief introduction and how we can run it
 
 1. **Calculator** - it's a simple calculator app in which you can add, subtract, multiply, and divide.
 
-    To run this app first clone the repo and go to the project folder, in which you will see a file name calculator.py.(This is our program)
+    To run this app first clone the repo and go to the project-list folder, in which you will see a file name calculator.py.(This is our program)
     
       **Windows/WSL** ===> ```pye.exe Calculator.py.py```
   
